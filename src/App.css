@@ -1,0 +1,399 @@
+body {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  box-shadow: 0 0 2px 0 rgb(110, 110, 110);
+  margin-bottom: 1rem;
+  /* justify-content: space-around; */
+}
+
+.header-item {
+  display: flex;
+  margin-left: 3rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  cursor: text;
+}
+
+.nav-brand {
+  display: inline-block;
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.nav-menu {
+  margin-right: 0.5rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
+
+.flex-column-secondary {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.group-text {
+  padding: 0;
+  margin: 0;
+  padding-left: 2rem;
+  color: #5f6368;
+  letter-spacing: 0.07272727em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  /* padding-right: 2.5rem; */
+  margin: 1rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: fit-content;
+  min-height: 180px;
+  border-color: #e0e0e0;
+  position: relative;
+}
+
+.card-title {
+  font-size: x-large;
+}
+
+.card-body {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.card-tag {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 1.5rem;
+  border-radius: 1rem;
+  font-size: smaller;
+}
+.card-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 3rem;
+  visibility: hidden;
+}
+.card-mark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  outline: 0;
+  visibility: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+}
+
+.card:hover .card-row {
+  visibility: visible;
+}
+
+.card:hover .card-mark {
+  visibility: visible;
+}
+
+.card-icon {
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.tag-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.tag-div-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3rem;
+  background-color: #feefc3;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* .tag-div-active:hover{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-left: 3rem;
+   background-color: #feefc3;
+ } */
+
+.tag-div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.tag-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tag-div-active {
+  background-color: #feefc3;
+}
+
+.tag-name {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tag-icon {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.4rem;
+  cursor: pointer;
+}
+
+.tag-form {
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  margin: 1rem 0;
+  border-bottom: 1;
+  cursor: pointer;
+}
+
+.tag-form:focus::placeholder {
+  background-color: transparent;
+}
+.tag-close {
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0.1rem;
+}
+
+.edit-form {
+  border-bottom: 1px solid;
+}
+
+.tag-form:focus {
+  border-bottom: 1px solid;
+}
+.tag-form:focus::placeholder {
+  color: transparent;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+  padding: 0.6rem;
+  margin: auto;
+  max-width: 45vw;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-items {
+  width: 100%;
+  border: none;
+  margin: 0 0 1rem;
+  outline: none;
+  resize: none;
+  opacity: 90%;
+  background-color: white;
+}
+
+.form-items:focus::placeholder {
+  color: transparent;
+}
+
+.form-input {
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 1.5rem;
+}
+
+.form-textarea {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 0;
+}
+
+.form-items-secondary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-button {
+  border: solid transparent;
+  border-radius: 8px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 550;
+  background-color: white;
+  opacity: 70%;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-right: 0.2rem;
+}
+.form-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.form-button:focus {
+  outline: none;
+}
+
+.form-select {
+  border: 0px solid transparent;
+  outline: 0px;
+  border-radius: 8px;
+  padding: 0.5rem 0.2rem;
+  font-weight: 550;
+  opacity: 60%;
+}
+.form-select:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.form-select option {
+  font-weight: 550;
+}
+
+.form-mark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  outline: 0;
+}
+
+.form-color {
+  margin: 0;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: inline-block;
+  /* width: 100%;  */
+}
+
+.search-form {
+  flex-direction: row;
+  margin: 0;
+  width: 100vw;
+  background-color: #f3f4f6;
+  box-shadow: none;
+  justify-content: flex-start;
+  padding: 0.2rem;
+}
+.search-form:focus-within {
+  background: white;
+  box-shadow: 0 1px 3px rgb(128, 128, 128);
+}
+.search-input {
+  font-size: large;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.search-icon {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* 
+.nonote-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ */
+.no-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #80868b;
+  font-size: 8rem;
+  opacity: 80%;
+}
+
+.no-note {
+  height: 50vh;
+}
+
+.nonote-text {
+  font-size: 1.5rem;
+}
